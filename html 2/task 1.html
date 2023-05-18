@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        nav{
+            background-color: burlywood;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        nav ul{
+            list-style: none;
+            padding: 10px;
+        }
+        li{
+            display: inline;  
+
+        }
+        li a{
+            text-decoration: none;
+            color: brown;
+            padding: 10px;
+            height: 500px;
+        }
+        footer{
+            background-color: darkgray;
+            color: black;
+            text-align: center;
+            padding: 40px;
+
+        }
+        .data{
+            flex:2;
+            margin: 10px;
+            /* display: flex; */
+        }
+        .map{
+            flex:2;
+            width: 100%;
+            margin: 10px;
+            background-color: darkgray;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .swift{
+            margin-right:30px;
+        }
+        .alto{
+            margin-left: 30px;
+        }
+        .kwid{
+            margin-left: 30px;
+        }
+        article{
+            display: flex;
+            width: 100%;
+        }
+        aside{
+            width: 100%;
+            display: flex;
+        
+        } 
+        @media (max-width: 600px) {
+            section {
+               flex-direction: column;
+            }
+
+        }
+        .form{
+            display: flex;
+        }
+        .form_name{
+            flex: 2;
+            width: 100%;
+            margin: 10px;
+        }  
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cars</h1>
+    </header>
+    
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Images">Images</a></li>
+                <li><a href="#Google Map">Google Map</a></li>
+                <li><a href="#Youtube Video">Youtube Video</a></li>
+            </ul>
+        </nav>
+        <div>
+        <img src="assets/images/car.jpg" alt="car image" width="100%" height="600px" title="car image" id="About Us">
+    </div>
+    <section id="Images">
+        <div class="swift">
+            <img src="assets/images/swift car.jpg" width="300px" title="swift">
+        </div>
+        <div class="alto">
+            <img src="assets/images/alto car.jpg" width="300px" title="alto">
+        </div>
+        <div class="kwid">
+            <img src="assets/images/kwid car.jpg" width="300px" height="200px" title="kwid">
+        </div>
+    </section>
+        <article>
+            <div class="swift">
+                <h1>swift</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde beatae repellendus suscipit nam rem ratione quo. Optio a esse ea? Quo vel totam ducimus ea amet magnam facilis qui sit.</p>
+            </div>
+            
+            <div class="alto">
+                <h1>alto</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum magnam eius vero cupiditate nam ea, quis vitae eum fugit deleniti harum hic natus iusto sit laboriosam nulla temporibus rem under.
+                </p>
+            </div>
+            <div class="kwid">
+                <h1>kwid</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis similique impedit, maxime alias repellendus omnis, atque id voluptas ipsam, numquam labore adipisci modi facilis exercitationem sint nostrum illo quam obcaecati?</p>
+            </div>
+            </div>
+        </article>
+            <aside>
+                <div class="data" id="Youtube Video">
+                
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/bHWgc5MPnPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                 </div>
+                  <div class="data"><iframe src="https://www.youtube.com/embed/qk7pZnxCX2o" width="100%" height="315"></iframe></div>  
+            
+            </aside>
+        
+    
+    <div class="form">
+        <div class="form_name" >
+    <form style="background-color: goldenrod; padding-left: 20px;">
+        
+        <h1> Registration Form</h1>
+        <label>First Name:</label> <br>
+        <input type="text"  placeholder="Enter first name"><br>
+        <label>Last Name:</label><br>
+        <input type="text" placeholder="Enter last name"><br><br>
+        <label>Email: </label><br><input type="email" name="email"><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <br><br>
+        <label>Gender</label><br>
+        <label><input type="radio" name="Gender">Male</label>
+        <label><input type="radio" name="Gender">Female</label>
+        <label><input type="radio" name="Gender">Others</label>
+        <br><br>
+        <label>BirthDate:</label>
+        <input type="datetime-local">
+        <br><br>
+        <h2 id="">Car Models</h2>
+        <label><input type="checkbox" name="Car Models">Swift</label>
+        <br>
+        <label><input type="checkbox" name="Car Models">Alto</label>
+        <br>
+        <label><input type="checkbox" name="Car Models">Kwid</label>
+        <br>
+        <br><br>
+        <h2>Address</h2>
+        <textarea  value="text address" cols="50" rows="10"></textarea><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        
+    </form>
+        </div>
+    </div>
+    <div class="map" id="Google Map">
+        <h1>Google Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15285.955928825902!2d74.23283257016548!3d16.702436318373326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1006ab379b519%3A0x5d7f5b324dbd9971!2sShahupuri%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1673606679222!5m2!1sen!2sin" width="100%" height="415px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </div>
+    <footer>
+        <h1>https://www.cardekho.com/newcars</h1>
+    </footer>
+    <br><br>
+    
+</body>
+</html>
